@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+  div.wrapper
+    p.hello Hello this is inside template
+    span#desc-id Yo Hello Man
+    p Hello this is rahul dude
+
+  footer
+    block footer
+      copyright Wes Bos
+
+  h2 sale ends in #{h.moment().endOf('day').fromNow()}
+   | Hello my dgs name is #{dog}
+   em How are you?
